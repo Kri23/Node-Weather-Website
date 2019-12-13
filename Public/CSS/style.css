@@ -1,0 +1,122 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(220,220,220);
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+.main-content{
+    flex-grow: 1;
+}
+
+.main-content h3{
+    margin: 15px;
+}
+
+header{
+    padding: 0 25px;
+    background-color: rgba(105,105,105,0.5);
+    padding-bottom: 2vh;
+    color: rgba(0,0,0,1);
+}
+
+header h1{
+    margin-top: 0px;
+    border-bottom: 2px silver;
+    border-bottom-style: groove;
+}
+
+header a{
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    margin: 0 15px 0 0;
+}
+
+header a:hover{
+    color: rgba(0,0,0,0.5);
+}
+
+footer{
+    background-color: rgba(105,105,105,0.5);
+    padding:0 25px 2vh;
+}
+
+.search{
+    float: left;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 2px outset rgba(105,105,105,0.5);
+    max-width: 60vh;
+    margin-left: 30vh;
+    margin-top: 5px;
+    font-size: large;
+    font-weight: 500;
+}
+.search button{
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px outset rgba(105,105,105,0.5);
+}
+.search button:hover{
+    background-color:  rgba(100,100,100,0.3);
+    color: snow;
+    border: 1px inset rgba(105,105,105,0.5);
+    padding-right: 25px;
+    padding-left: 25px;
+    transition: 0.4s all;
+}
+.search p{
+    margin: 15px;
+}
+
+#find{
+    padding: 5px;
+}
+
+#msg{
+    display: block;
+    border: 2px outset rgba(105,105,105,0.5);
+    padding: 50px;
+    float: left;
+    margin: 20px;
+    margin-top: 5px;
+    margin-left: 10vh;
+    display: none;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#msgSpace{
+    display: block;
+    float: left;
+    margin-left: 10vh;
+    border-left: 2px solid rgba(105,105,105,0.7);
+    height: 50vh;
+}
+
+@media only screen and (max-width: 1220px) {
+    #msgSpace{
+        display: none;
+    }
+    .search{
+        margin: 55px;
+        margin-top: 5px;
+    }
+    #msg{
+        margin: 20px;
+        margin-top: 5px; 
+    }
+}
+
+.main-content img{
+    margin: 10px;
+    position: relative;
+}
+.main-content p{
+    position: relative;
+    font-size: large;
+    font-weight: 500;
+}

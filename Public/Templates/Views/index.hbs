@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>{{title}}</title>
+<link rel="icon" href="/Images/cloud.png">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h3>Weather Application for Weather Forecast of your Location.</h3>
+        <form class='search'>
+            <p>Enter Location Name for Weather Forcast.</p>
+            <input id='find' type="text" placeholder="Location" required>
+            <button>Search</button>
+        </form>
+        <div id="msgSpace"></div>
+        <div id='msg'></div>
+    </div>
+    
+    {{>footer}}
+
+<script src="Script/script.js"></script>
+</body>
+
+</html>
