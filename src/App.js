@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
-const Port = process.env.PORT || 3000; // Port Value for Heroku which will be provided by heroku. and a default value if we run it on machiine
+const Port = (process.env.PORT || 3000); // Port Value for Heroku which will be provided by heroku. and a default value if we run it on machiine
 
 const geocode = require('./Modules/geocode');
 const getWeather = require('./Modules/getWeather');
