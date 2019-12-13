@@ -8,7 +8,7 @@
   "description": "Weather App",
   "main": "index.js",
   "scripts": {
-    "start": "node Src/App.js",
+    "start": "node Src/App.js"
   },
   "author": "",
   "license": "ISC",
