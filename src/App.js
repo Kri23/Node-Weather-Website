@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
+const Port = process.env.PORT || 3000; // Port Value for Heroku which will be provided by heroku. and a default value if we run it on machiine
 
 const geocode = require('./Modules/geocode');
 const getWeather = require('./Modules/getWeather');
@@ -86,30 +87,6 @@ app.get('*',(req,res)=>{
     });
 });
 
-app.listen(3000,() => {
-    console.log(chalk.black.bgGreen("Server Running at Port 3000!!!"));
+app.listen(Port,() => {
+    console.log(chalk.black.bgGreen("Server Running at Port "+Port+"!!!"));
 });
-
-
-
-// app.com
-// app.com/help
-// app.com/about
-// app.com/weather
-
-// One way to serve Requests.
-// app.get('',(req,res) => {
-//     res.send("Hello Express!!!");
-// });
-
-// app.get('/about',(req,res) => {
-//     res.send("About Page!!!");
-// });
-
-// app.get('/help',(req,res) => {
-//     res.send("Help page!!!");
-// });
-
-// app.get('/weather',(req,res) => {
-//     res.send("Weather App!!!");
-// });

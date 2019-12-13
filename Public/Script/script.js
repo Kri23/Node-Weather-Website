@@ -9,7 +9,7 @@ weatherForm.addEventListener('submit',(e) => {
     msg.style.display = 'inherit';
     msg.innerHTML = 'Loading...';
     document.querySelector('body').style.cursor = 'progress';
-    const url = 'http://localhost:3000/weather?address=' + encodeURIComponent(loc);
+    const url = '/weather?address=' + encodeURIComponent(loc);
     fetch(url).then((response) => {
         response.json().then((data) =>{
             if(data.Error){
