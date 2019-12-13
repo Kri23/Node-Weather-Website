@@ -2,7 +2,8 @@
   "name": "web_server",
   "version": "1.0.0",
   "engines": {
-    "node": "13.1.0"
+    "node": "13.1.0",
+    "npm" : "6.12.1"
   },
   "description": "Weather App",
   "main": "index.js",
