@@ -43,17 +43,6 @@ footer{
     padding:0 25px 2vh;
 }
 
-.search{
-    float: left;
-    padding: 20px;
-    padding-bottom: 40px;
-    border: 2px outset rgba(105,105,105,0.5);
-    max-width: 60vh;
-    margin-left: 30vh;
-    margin-top: 5px;
-    font-size: large;
-    font-weight: 500;
-}
 .search button{
     cursor: pointer;
     padding: 5px;
@@ -72,42 +61,61 @@ footer{
     margin: 15px;
 }
 
+.search{
+    position: relative;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 2px outset rgba(105,105,105,0.5);
+    max-width: 60vh;
+    margin-left: 73vh;
+    margin-top: 30px;
+    font-size: large;
+    font-weight: 500;
+}
+
 #find{
     padding: 5px;
 }
 
 #msg{
-    display: block;
-    border: 2px outset rgba(105,105,105,0.5);
-    padding: 50px;
-    float: left;
-    margin: 20px;
-    margin-top: 5px;
-    margin-left: 10vh;
-    display: none;
+    position: relative;
     font-size: medium;
     font-weight: 500;
+    border: 2px outset rgba(105,105,105,0.5);
+    padding: 50px;
+    max-width: 100vh;
+    margin: 50px;
+    margin-left: 47vh;
+    display: none;
+
+
 }
 
+
 #msgSpace{
-    display: block;
-    float: left;
-    margin-left: 10vh;
-    border-left: 2px solid rgba(105,105,105,0.7);
-    height: 50vh;
+    display: relative;
+    max-width: 150vh;
+    margin-top: 50px;
+    margin-left: 30vh;
+    border-top: 2px solid rgba(105,105,105,0.7);
 }
 
 @media only screen and (max-width: 1220px) {
     #msgSpace{
-        display: none;
+        margin-left: auto;
+        margin-right: auto;
     }
     .search{
         margin: 55px;
-        margin-top: 5px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #msg{
-        margin: 20px;
-        margin-top: 5px; 
+        margin: 55px;
+        margin-top: 50px; 
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
