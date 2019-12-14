@@ -7,6 +7,9 @@ body{
     min-height: 100vh;
     text-align: center;
 }
+@-ms-viewport{
+    width: device-width;
+  }
 .main-content{
     flex-grow: 1;
 }
